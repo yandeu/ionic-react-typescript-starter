@@ -1,0 +1,15 @@
+{
+  "compilerOptions": {
+    "target": "es5",
+    "module": "commonjs",
+    "jsx": "react",
+    "strict": true,
+    "noImplicitAny": true,
+    "esModuleInterop": true,
+    "sourceMap": true,
+    "allowUnreachableCode": false,
+    "strictPropertyInitialization": false,
+    "experimentalDecorators": true,
+    "lib": ["dom", "es2015.promise", "es5"]
+  }
+}
