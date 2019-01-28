@@ -16,3 +16,8 @@ A simple starter template for <a href="https://ionicframework.com/">Ionic 4</a>,
 </p>
 
 > This template is not yet ready for use since [@ionic/react](https://www.npmjs.com/package/@ionic/react) is still not finished and many components are missing.
+
+## How To Use
+
+- `npm start` to start the devServer
+- `npm run build` to build the production ready code to the /dist folder
