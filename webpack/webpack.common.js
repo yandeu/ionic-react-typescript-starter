@@ -14,9 +14,12 @@ module.exports = {
   module: {
     rules: [
       {
-        // for the ionicons in @ionic/react
-        test: /\.svg$/,
-        use: 'raw-loader'
+        test: /\.css$/i,
+        use: ['style-loader', 'css-loader']
+      },
+      {
+        test: /\.(eot|woff|woff2|svg|ttf)([\?]?.*)$/,
+        loader: 'file-loader'
       },
       {
         test: /\.tsx?$/,

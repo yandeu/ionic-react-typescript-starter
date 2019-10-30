@@ -1,6 +1,6 @@
 {
   "name": "ionic-react-typescript-starter",
-  "version": "0.0.1",
+  "version": "1.0.0",
   "description": "",
   "main": "index.js",
   "scripts": {
@@ -13,6 +13,7 @@
     "@ionic/core": "^4.11.3",
     "@ionic/react": "^4.11.3",
     "@ionic/react-router": "^4.11.3",
+    "ionicons": "^4.6.3",
     "react": "^16.7.0",
     "react-dom": "^16.7.0",
     "react-router": "^5.0.0",
@@ -24,8 +25,10 @@
     "@types/react-router": "^5.0.0",
     "@types/react-router-dom": "^5.0.0",
     "clean-webpack-plugin": "^1.0.1",
+    "css-loader": "^3.2.0",
+    "file-loader": "^4.2.0",
     "html-webpack-plugin": "^4.0.0-beta.8",
-    "raw-loader": "^1.0.0",
+    "style-loader": "^1.0.0",
     "ts-loader": "^5.4.5",
     "typescript": "^3.7.0-dev.20191021",
     "webpack": "^4.41.2",
