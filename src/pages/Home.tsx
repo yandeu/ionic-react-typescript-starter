@@ -9,9 +9,9 @@ import {
   IonLabel
 } from '@ionic/react'
 import React from 'react'
-import { RouteComponentProps } from 'react-router'
+import { RouteComponentProps, Route } from 'react-router'
 
-const Home: React.FC<RouteComponentProps> = ({ history }) => {
+const Home: React.FC<RouteComponentProps> = props => {
   const users = [
     { id: 0, name: 'Fred' },
     { id: 1, name: 'Sabrina' },
@@ -20,6 +20,8 @@ const Home: React.FC<RouteComponentProps> = ({ history }) => {
     { id: 4, name: 'Martin' },
     { id: 5, name: 'Monika' }
   ]
+
+  const { history } = props
 
   return (
     <IonPage>
