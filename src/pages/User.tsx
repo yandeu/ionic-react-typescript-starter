@@ -19,11 +19,11 @@ const User: React.FC<RouteComponentProps> = ({ location }) => {
           <IonButtons slot="start">
             <IonBackButton />
           </IonButtons>
-          <IonTitle>{state.name}</IonTitle>
+          <IonTitle>{state?.name}</IonTitle>
         </IonToolbar>
       </IonHeader>
       <IonContent className="ion-padding">
-        <p>Hello {state.name}</p>
+        <p>Hello {state?.name}</p>
       </IonContent>
     </IonPage>
   )

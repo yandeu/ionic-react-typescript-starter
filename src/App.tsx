@@ -35,31 +35,30 @@ import '@ionic/react/css/display.css'
 /* Theme variables */
 import './theme/variables.css'
 
-const App: React.FunctionComponent = () => (
-  <IonApp>
-    <IonReactRouter>
-      <IonPage id="main">
-        <IonTabs>
-          <IonRouterOutlet>
-            <Route path="/home" component={Home} exact={true} />
-            <Route path="/user" component={User} />
-            <Route path="/about" component={About} exact={true} />
-            <Route path="/" render={() => <Redirect to="/home" />} />
-          </IonRouterOutlet>
-          <IonTabBar slot="bottom">
-            <IonTabButton tab="home" href="/home">
-              <IonIcon icon={home} />
-              <IonLabel>Home</IonLabel>
-            </IonTabButton>
-            <IonTabButton tab="about" href="/about">
-              <IonIcon icon={apps} />
-              <IonLabel>About</IonLabel>
-            </IonTabButton>
-          </IonTabBar>
-        </IonTabs>
-      </IonPage>
-    </IonReactRouter>
-  </IonApp>
-)
+const App: React.FunctionComponent = props => {
+  return (
+    <IonPage id="main">
+      <IonTabs>
+        <IonRouterOutlet>
+          <Route path="/home" component={Home} exact />
+          <Route path="/home/:user" component={User} exact />
+          <Route path="/about" component={About} exact />
+          <Route path="/" exact render={() => <Redirect to="/home" />} />
+        </IonRouterOutlet>
+
+        <IonTabBar slot="bottom">
+          <IonTabButton tab="home" href="/home">
+            <IonIcon icon={home} />
+            <IonLabel>Home</IonLabel>
+          </IonTabButton>
+          <IonTabButton tab="about" href="/about">
+            <IonIcon icon={apps} />
+            <IonLabel>About</IonLabel>
+          </IonTabButton>
+        </IonTabBar>
+      </IonTabs>
+    </IonPage>
+  )
+}
 
 export default App

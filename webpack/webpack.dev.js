@@ -6,7 +6,8 @@ module.exports = merge(common, {
   devtool: 'inline-source-map',
   devServer: {
     historyApiFallback: {
-      index: '/'
+      index: '/',
+      publicPath: '/'
     }
   }
 })
