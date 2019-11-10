@@ -1,13 +1,4 @@
-import {
-  IonContent,
-  IonHeader,
-  IonPage,
-  IonTitle,
-  IonToolbar,
-  IonList,
-  IonItem,
-  IonLabel
-} from '@ionic/react'
+import { IonContent, IonHeader, IonPage, IonTitle, IonToolbar, IonList, IonItem, IonLabel } from '@ionic/react'
 import React from 'react'
 import { RouteComponentProps } from 'react-router'
 
@@ -39,10 +30,7 @@ const Home: React.FC<RouteComponentProps> = props => {
                 key={i}
                 onClick={() => {
                   console.log('onClick')
-                  history.push(
-                    `/home/${user.name.toLowerCase().replace(/\s/g, '-')}`,
-                    user
-                  )
+                  history.push(`/home/${user.name.toLowerCase().replace(/\s/g, '-')}`, user)
                 }}
               >
                 <IonLabel>{user.name}</IonLabel>
