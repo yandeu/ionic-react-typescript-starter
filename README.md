@@ -10,9 +10,10 @@
 A simple starter template for <a href="https://ionicframework.com/">Ionic 4</a>, <a href="https://reactjs.org/">React</a> and <a href="https://www.typescriptlang.org/">TypeScript</a></h4>
 
 <p align="center">
-  <a href="https://david-dm.org/yandeu/ionic-react-starter" title="dependencies status"><img src="https://david-dm.org/yandeu/ionic-react-starter/status.svg"/></a>
+  <a href="https://david-dm.org/yandeu/ionic-react-starter" title="dependencies status"><img src="https://david-dm.org/yandeu/ionic-react-starter/status.svg?style=flat-square"/></a>
+  <a href="https://opensource.org/licenses/MIT" title="License: MIT" ><img src="https://img.shields.io/badge/License-MIT-greenbright.svg?style=flat-square"></a>
+  <img src="https://img.shields.io/github/last-commit/yandeu/ionic-react-typescript-starter.svg?style=flat-square" alt="GitHub last commit">
   <a href="https://github.com/prettier/prettier" title="License: MIT" ><img src="https://img.shields.io/badge/code_style-prettier-ff69b4.svg?style=flat-square" alt="code style: prettier"></a>
-  <a href="https://opensource.org/licenses/MIT" title="License: MIT" ><img src="https://img.shields.io/badge/License-MIT-greenbright.svg"></a>
 </p>
 
 ## How To Use
