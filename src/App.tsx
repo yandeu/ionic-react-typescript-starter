@@ -1,7 +1,6 @@
 import React from 'react'
-import { Route, Redirect } from 'react-router-dom'
+import { Route, Redirect, RouteComponentProps } from 'react-router-dom'
 import {
-  IonApp,
   IonRouterOutlet,
   IonPage,
   IonTabs,
@@ -10,8 +9,8 @@ import {
   IonIcon,
   IonLabel
 } from '@ionic/react'
-import { IonReactRouter } from '@ionic/react-router'
 import { home, apps } from 'ionicons/icons'
+import { Helmet } from 'react-helmet'
 import Home from './pages/Home'
 import User from './pages/User'
 import About from './pages/About'
@@ -35,15 +34,28 @@ import '@ionic/react/css/display.css'
 /* Theme variables */
 import './theme/variables.css'
 
-const App: React.FunctionComponent = props => {
+const App: React.FunctionComponent<RouteComponentProps> = props => {
+  // hide the tab bar when not on home or about page
+  const display = props.location.pathname.match(/home$|about$/g)
+    ? 'flex'
+    : 'none'
+
   return (
     <IonPage id="main">
+      {/*using Helmet to add the css to the head*/}
+      <Helmet>
+        <style type="text/css">{`
+        ion-tab-bar {
+            display: ${display};
+        }
+    `}</style>
+      </Helmet>
       <IonTabs>
         <IonRouterOutlet>
           <Route path="/home" component={Home} exact />
           <Route path="/home/:user" component={User} exact />
           <Route path="/about" component={About} exact />
-          <Route path="/" exact render={() => <Redirect to="/home" />} />
+          <Redirect exact from="/" to="/home" />
         </IonRouterOutlet>
 
         <IonTabBar slot="bottom">
