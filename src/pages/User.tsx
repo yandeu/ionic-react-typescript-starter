@@ -3,7 +3,8 @@ import React from 'react'
 import { RouteComponentProps } from 'react-router'
 
 const User: React.FC<RouteComponentProps> = ({ location }) => {
-  const { state } = location
+  const state = location.state as { name: string }
+
   return (
     <IonPage>
       <IonHeader>
