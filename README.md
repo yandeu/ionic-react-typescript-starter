@@ -2,7 +2,7 @@
   <br>
  <img src="readme/header.png" alt="header" width="600"></a>
   <br>
-  Ionic 5 (rc.2) & React -  Starter Template
+  Ionic 5 & React -  Starter Template
   <br>
 </h1>
 
